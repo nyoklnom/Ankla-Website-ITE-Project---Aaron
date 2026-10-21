@@ -1,0 +1,625 @@
+* { 
+    font-family:'Montserrat', sans-serif;
+    box-sizing:border-box;
+}
+
+/* Header */
+
+.navbar{
+    background-color: #111111;
+    box-shadow: 0 0 35px rgb(9, 9, 8);
+    overflow:hidden;
+    margin:-10px;
+    border-bottom: 2px solid #FF7A00;
+}
+.navbar ul {
+    list-style-type: none;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+.navbar a {
+    text-decoration: none;
+    display:block;
+    color:#F5F5F5;
+    padding:20px;
+    text-align:center;
+    font-size:12px;
+    margin-top:13px;
+}
+.navbar a:hover{
+    transition: 0.5s;
+    background-color:#FF7A00;
+}
+.navbar li {
+    float:right;
+}
+.navbar img {
+    height: 50px;
+    width:200px;
+    margin-top: 15px;
+    Margin-left: 15px;
+}
+.profile img {
+    height:30px;
+    width:110px;
+    margin:-11px;
+}
+.profile a:hover {
+    transition: 0.5s;
+    background-color:#111111;
+}
+
+body { 
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #111111, #171717);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.intro {
+    position: relative;
+    width: calc(100% - 60px);
+    max-width: 1400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 55px auto;
+}
+
+.intro video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: #222;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px #0002;
+}
+
+.banner-arrow.left {
+    left: 10px;
+}
+
+.banner-arrow.right {
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Cards Stories*/
+
+.container {
+    border-radius:5px;
+    height:auto;
+    margin-top:30px;
+    color:#F5F5F5;
+    margin-left:-15px;
+    margin-right:-15px;
+    background:linear-gradient(#111111,#FF7A00,#171717,#111111,#FF7A00,#171717,#111111,#FF7A00,#171717,#111111,#FF7A00,#171717,#111111,#FF7A00,#171717);
+    border-top:2px solid #FF7A00;
+    border-bottom:2px solid #FF7A00;
+}
+
+.insidecon {
+ display:flex;
+ gap:10px;
+ width:100%;
+ padding:25px;
+ display: grid;
+ grid-template-columns: repeat(6, minmax(0, 1fr));
+
+ 
+}
+
+.card {
+    flex: 0 0 150px;
+    min-width:0;
+    margin: 15px;
+    border-radius:3px;
+    background-color: #F5F5F5;
+}
+
+.card:hover {
+    transition:0.5s;
+    box-shadow: 0 0 35px #FF7A00;
+    animation: moveCenter 1s infinite alternate ease-in
+}
+
+@keyframes moveCenter{
+    from {
+        transform:scale(1)
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 268px;
+    object-fit: cover;
+    display: block;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.category {
+    display:inline-block;
+    padding: 6px 10px;
+    margin: 8px 3px 4px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight:450;
+    color:#F5F5F5;
+    background-color:#FF7A00;
+    
+}
+.views {
+    font-size:12px;
+    margin:10px;
+    color:#111111;
+    opacity:50%;
+}
+
+
+/* Article */
+.book-container {
+    display: flex;
+    gap: 30px;       /* Space between the cards */
+    padding: 20px;
+    align-items: stretch;
+}
+
+.article {
+    display: flex;
+    flex: 1;
+    margin: 0;       /* Let gap control the spacing */
+    color: #222;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 300px;
+    min-width: 0;
+}
+
+.article img {
+    width: 214px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+.article .info {
+    padding: 20px 25px;
+    flex: 1;
+    min-width: 0;
+}
+
+.article h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #171717;
+}
+
+.article p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #707070;
+    margin-top:50px;
+}
+
+@media (max-width: 900px) {
+    .book-container {
+        flex-direction: column;
+    }
+}
+
+.gru {
+    color:white;
+    margin-left: 20px;
+    
+}
+.gru p {
+    color:white;
+    margin-top:-20px;
+    opacity:50%;
+}
+
+.grus {
+    color:white;
+    opacity:50%;
+    font-weight:50px;
+    margin-bottom: -20px;
+    margin-left: 20px;
+}
+hr {
+    margin-top:50px;
+    margin-bottom:50px;
+    opacity: 50%;
+    border: 1.5px solid grey;
+}
+
+
+.footer {
+    background:linear-gradient(#171717,#FF7A00,#171717);
+    padding: 55px 20px 15px;
+    box-sizing: border-box;
+    margin-right:-20px;
+    margin-left:-20px;
+    margin-bottom:-20px;
+    margin-top:20px;
+}
+
+/* Footer container */
+.foot {
+    text-align: center;
+}
+
+/* Both rows */
+.foot ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+}
+
+/* First row */
+.footer-links {
+    margin-bottom: 25px !important;
+}
+
+.footer-links li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+/* Vertical separator */
+.footer-links .separator {
+    font-weight: normal;
+}
+
+/* Second row */
+.footer-bottom li {
+    font-size: 18px;
+    color: #fcf9f9;
+    cursor: pointer;
+    opacity:50%;
+}
+
+/* Copyright */
+.footer-bottom .copyright {
+    font-weight: normal;
+}
+
+/* Hover effect */
+.foot li:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .footer {
+        padding-top: 30px;
+    }
+
+    .foot ul {
+        gap: 15px;
+    }
+
+    .foot li {
+        font-size: 14px;
+    }
+}
+
+.article:hover {
+    transition:0.5s;
+    box-shadow: 0 0 35px #FF7A00;
+    animation: moveCenter 1s infinite alternate ease-in
+}
+
+
+
+
+
+
+
+
+
+
+/*stories*/
+
+
+
+.cuntener {
+    margin-top:30px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.insidecun {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+}
+
+.insidecun img {
+    width: 40px;
+    height: 55px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.story-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.story-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #292929;
+}
+
+.story-info p {
+    margin: 0;
+    font-size: 15px;
+    color: #777;
+}
+
+/*laman ng alammo na*/
+
+
+.taytel {
+    color: white;
+    text-align: center;
+    margin: 35px 20px 30px;
+}
+
+.taytel h2 {
+    margin: 0 0 8px;
+    color: #FF7A00;
+    font-size: 28px;
+}
+
+.taytel p {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Story reading area */
+.storee {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+}
+
+.storee p {
+    color: #e0e0e0;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    margin: 0 0 24px;
+}
+
+/* Important questions and quotes */
+.storee .highlight {
+    color: #FF7A00;
+    text-align: center;
+    font-style: italic;
+    margin: 32px 0;
+}
+
+/* Mysterious book title */
+.storee .book-title {
+    color: #FF7A00;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+/* Final sentence */
+.storee .ending {
+    text-align: center;
+    color: #FF7A00;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    .taytel h2 {
+        font-size: 24px;
+    }
+
+    .storee {
+        padding: 15px 20px 40px;
+    }
+
+    .storee p {
+        font-size: 16px;
+        line-height: 1.9;
+        margin-bottom: 20px;
+    }
+}
+
+.cuntener {
+    margin-top: 30px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.insidecun {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+}
+
+.insidecun img {
+    width: 40px;
+    height: 55px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.story-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.story-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #292929;
+}
+
+.story-info p {
+    margin: 0;
+    font-size: 15px;
+    color: #777;
+}
+
+/* Like button */
+.like-btn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 15px;
+    background: transparent;
+    border: 1px solid #FF7A00;
+    border-radius: 20px;
+    color: #FF7A00;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.heart {
+    font-size: 21px;
+    line-height: 1;
+}
+
+.like-btn:hover {
+    background-color: #fff0e3;
+}
+
+.like-btn.liked {
+    background-color: #FF7A00;
+    color: white;
+}
+
+
+
+/* Finish reading section */
+.read-finish {
+    text-align: center;
+    margin: 45px 0 70px;
+}
+
+.read-button {
+    padding: 14px 32px;
+    background: #FF7A00;
+    color: #111111;
+    border: 1px solid #FF7A00;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.read-button:hover {
+    background: transparent;
+    color: #FF7A00;
+    box-shadow: 0 0 18px rgba(255, 122, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.read-button.completed {
+    background: #222222;
+    color: #FF7A00;
+    border-color: #FF7A00;
+}
+
+.read-message {
+    color: #FF7A00;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 22px;
+}
+
+/* Orange and gold celebration */
+.read-confetti {
+    position: fixed;
+    top: -20px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: read-celebration 3s ease-in forwards;
+}
+
+@keyframes read-celebration {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(105vh) translateX(var(--drift))
+                   rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .read-confetti {
+        animation-duration: 0.5s;
+    }
+
+    .read-button {
+        transition: none;
+    }
+}
+
+.card a {
+    text-decoration: none;
+}
